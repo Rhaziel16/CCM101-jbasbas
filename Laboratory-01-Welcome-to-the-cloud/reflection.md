@@ -1,7 +1,11 @@
 # Reflection
 
-This laboratory helped me understand the basic use of Linux and cloud environments. At first, some of the commands were new to me, but I slowly understood what each command was used for.
+# Reflection
 
-I learned how to create a user, check system information, create folders and files, and use GitHub to store my work. I also learned that keeping files organized is important when working on different laboratory activities.
+This laboratory helped me understand the basics of Linux and cloud environments. I learned how to create a user, check system information, create folders and files, and use GitHub to save my work.
 
-Overall, this activity gave me a basic understanding of how cloud and Linux environments work. I think these skills will be useful for the next laboratory activities.
+I also experienced some problems while doing the activity. There were times when the Wi-Fi would suddenly become weak, and the KillerCoda playground would start to lag and reset. When this happened, the things I was working on would disappear and go back to zero. This happened a few times, so I had to do some of the steps again, which took extra time.
+
+Even though I experienced these problems, I still learned how to use the Linux commands and follow the steps in the activity. It also taught me to be more patient and careful while doing the laboratory.
+
+Overall, this activity gave me a better understanding of Linux, cloud environments, and GitHub. I think what I learned here will help me in the next laboratory activities.
