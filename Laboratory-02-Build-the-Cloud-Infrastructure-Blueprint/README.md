@@ -33,7 +33,7 @@ The following Linux commands were used during the activity:
 
 - `cat /etc/os-release`
 - `uname -r`
-- `lscpu`
+- `lscpu | grep "Model name"`
 - `nproc`
 - `free -h`
 - `df -h`
