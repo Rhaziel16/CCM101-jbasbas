@@ -16,7 +16,7 @@ I checked this using the `uname -r` command.
 
 The CPU model is **Intel Xeon E312xx (Sandy Bridge, IBRS update)**.
 
-I used the `lscpu` command to check the processor information.
+I used the `lscpu | grep "Model name"` command to check the processor information.
 
 ## Number of CPU Cores
 
