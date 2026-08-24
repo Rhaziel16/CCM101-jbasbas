@@ -40,6 +40,8 @@ AWS IAM manages users, roles, and permissions. It controls who can access AWS re
 
 AWS can be used for websites, mobile applications, e-commerce systems, databases, backups, and other business applications.
 
-## AWS Homepage Screenshot
+## Screenshot
+
+AWS screenshot:
 
 ![AWS Homepage](screenshots/aws-homepage.png)
