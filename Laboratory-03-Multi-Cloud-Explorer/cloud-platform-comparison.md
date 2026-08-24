@@ -30,38 +30,3 @@ Google Cloud is a strong choice for both AI and Kubernetes. Its AI services can 
 
 I would choose AWS for general cloud projects because I would have many services to choose from. I also think it would be useful when a project starts small and later needs more cloud resources.
 
----
-
-## Checkpoint 5 – Match the Cloud Services
-
-| Service Category | AWS | Azure | GCP |
-|---|---|---|---|
-| Virtual Machine | Amazon EC2 | Azure Virtual Machines | Compute Engine |
-| Object Storage | Amazon S3 | Azure Blob Storage | Cloud Storage |
-| Identity Management | AWS IAM | Microsoft Entra ID | Cloud IAM |
-| SQL Database | Amazon RDS | Azure SQL Database | Cloud SQL |
-| Kubernetes | Amazon EKS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
-
----
-
-## Service Explanation
-
-### Virtual Machine
-
-A virtual machine is a software-based computer that runs an operating system and applications. The equivalent services are EC2, Azure Virtual Machines, and Compute Engine.
-
-### Object Storage
-
-Object storage is used for storing files and other objects. The matching services are Amazon S3, Azure Blob Storage, and Google Cloud Storage.
-
-### Identity Management
-
-Identity services control users, roles, and permissions. AWS IAM, Microsoft Entra ID, and Cloud IAM perform this type of function.
-
-### SQL Database
-
-These services provide managed relational databases. The matching services are Amazon RDS, Azure SQL Database, and Cloud SQL.
-
-### Kubernetes
-
-These services provide managed Kubernetes environments. The equivalents are Amazon EKS, Azure Kubernetes Service, and Google Kubernetes Engine.
