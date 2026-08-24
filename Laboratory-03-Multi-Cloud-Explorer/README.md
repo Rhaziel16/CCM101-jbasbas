@@ -1,41 +1,49 @@
 # Checkpoint 7 – Continue Your Linux Investigation
 
-## KillerCoda Playground
+## Linux Server Information
 
-For this checkpoint, I used a KillerCoda Playground to check the basic details of the Linux server. I used Linux commands to identify the operating system, processor, memory, and available disk space.
+### Operating System
 
-## Operating System
+Ubuntu 24.04.2 LTS
 
-**Answer:** Ubuntu 24.04.2 LTS
+### CPU Information
 
-## CPU Information
+Intel Xeon E312x (Sandy Bridge), 1 CPU, approximately 2.0 GHz
 
-**Answer:** Intel Xeon E312x (Sandy Bridge), with 1 CPU running at approximately 2.0 GHz.
+### Memory
 
-## Memory
+1.96 GiB
 
-**Answer:** 1.96 GiB of total memory.
+### Disk Space
 
-## Disk Space
-
-**Answer:** 19 GB of total disk space.
+19 GB
 
 ## Cloud Migration
 
-### If this Linux server were migrated to the cloud, which AWS, Azure, and GCP services could host it?
+If this Linux server were migrated to the cloud, the following services could host it:
 
-**Answer:**
+### AWS
 
-| Cloud Provider | Service That Could Host the Server |
-|---|---|
-| **AWS** | Amazon EC2 |
-| **Microsoft Azure** | Azure Virtual Machines |
-| **Google Cloud Platform (GCP)** | Compute Engine |
+**Amazon EC2** – a virtual machine service that can run Linux servers.
 
-These three services can be used to create virtual machines capable of running a Linux server. The actual service configuration can be adjusted depending on the CPU, memory, storage, and workload requirements of the server.
+### Azure
 
-## Terminal Output Screenshot
+**Azure Virtual Machines** – a virtual machine service that can run Linux servers.
 
-The screenshot below shows the terminal commands and the information collected from the Linux environment.
+### GCP
+
+**Compute Engine** – a virtual machine service that can run Linux servers.
+
+## Cloud Service Comparison
+
+| Cloud Provider | Service | Purpose |
+|---|---|---|
+| AWS | Amazon EC2 | Host the Linux server as a virtual machine |
+| Azure | Azure Virtual Machines | Host the Linux server as a virtual machine |
+| GCP | Compute Engine | Host the Linux server as a virtual machine |
+
+## Terminal Output
+
+The screenshot below shows the terminal commands and their outputs used to identify the operating system, CPU information, memory, and disk space.
 
 ![KillerCoda Terminal](screenshots/killercoda-terminal.png)
