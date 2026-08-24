@@ -55,3 +55,15 @@ I would recommend AWS for this company because an international online store nee
 - Amazon EC2 – for application servers
 - Elastic Load Balancing – for distributing incoming traffic
 - EC2 Auto Scaling – for adjusting the number of running instances
+
+# Checkpoint 6 – Multi-Cloud Decision Matrix
+
+| Business Requirement | Recommended Platform | Justification |
+|---|---|---|
+| Startup Company | AWS | It provides many services and can scale as the startup gains more users. |
+| Enterprise Organization | AWS | Its large selection of services can support different enterprise workloads. |
+| Microsoft Environment | Azure | It is a good match for organizations already using Microsoft technologies. |
+| AI / Machine Learning | GCP | It provides strong services for AI and Machine Learning workloads. |
+| Kubernetes Deployment | GCP | Google Kubernetes Engine provides a managed Kubernetes environment. |
+| Global Web Application | AWS | Its global infrastructure and scaling services can support applications with changing traffic. |
+
