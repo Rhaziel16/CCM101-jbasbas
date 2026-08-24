@@ -2,7 +2,7 @@
 
 ## KillerCoda Playground
 
-A KillerCoda Playground was used to investigate the Linux server and collect its basic system information.
+A KillerCoda Playground was used to inspect the Linux server using basic Linux commands.
 
 ## Operating System
 
@@ -26,7 +26,7 @@ Intel Xeon E312x (Sandy Bridge), 1 CPU, approximately 2.0 GHz
 free -h
 ```
 
-1.96 GiB of memory
+1.96 GiB
 
 ## Disk Space
 
@@ -34,26 +34,26 @@ free -h
 df -h
 ```
 
-19 GB of disk space
+19 GB
 
 ## Cloud Migration
 
-If this Linux server were migrated to the cloud, the following AWS, Azure, and GCP services could be used to host it.
+If this Linux server were migrated to the cloud, the following services could host it:
 
 ### AWS
 
-**Amazon EC2** – provides virtual machines that can be used to run a Linux server.
+**Amazon EC2** – a virtual machine service that can run a Linux server.
 
 ### Azure
 
-**Azure Virtual Machines** – provides cloud-based virtual machines that support Linux operating systems.
+**Azure Virtual Machines** – a virtual machine service that supports Linux servers.
 
 ### GCP
 
-**Compute Engine** – provides virtual machines that can be configured to run a Linux server.
+**Compute Engine** – a virtual machine service that can be used to run a Linux server.
 
 ## Terminal Output
 
-The screenshot below shows the terminal output from the Linux commands used during the investigation.
+The screenshot below shows the terminal output from the Linux commands used to identify the operating system, CPU information, memory, and disk space.
 
 ![KillerCoda Terminal](screenshots/killercoda-terminal.png)
