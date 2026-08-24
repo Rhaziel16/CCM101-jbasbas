@@ -31,9 +31,6 @@ Google Cloud is a strong choice for both AI and Kubernetes. Its AI services can 
 I would choose AWS for general cloud projects because I would have many services to choose from. I also think it would be useful when a project starts small and later needs more cloud resources.
 
 
-
-
-
 ## Checkpoint 5 – Match the Cloud Services
 
 | Service Category | AWS | Azure | GCP |
@@ -43,5 +40,4 @@ I would choose AWS for general cloud projects because I would have many services
 | Identity Management | AWS IAM | Microsoft Entra ID | Cloud IAM |
 | SQL Database | Amazon RDS | Azure SQL Database | Cloud SQL |
 | Kubernetes | Amazon EKS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
-
 
