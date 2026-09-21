@@ -1,13 +1,15 @@
-# Types of Cloud Storage
+# Storage Types Research
 
-## Comparison of Cloud Storage Types
+## Comparison of Storage Types
 
-| Storage Type   | Description                                                                         | Primary Use Case                                                                  | Cloud Provider Example |
-| -------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------- |
-| Block Storage  | Stores data in fixed-size blocks that can be accessed individually.                 | Operating systems, databases, and applications that need fast storage.            | AWS EBS                |
-| File Storage   | Stores files in a shared folder structure that can be accessed by multiple systems. | Shared files, documents, and applications that need a common file system.         | AWS EFS                |
-| Object Storage | Stores data as objects together with metadata and a unique identifier.              | Images, videos, backups, documents, and other large amounts of unstructured data. | AWS S3                 |
+| Storage Type | Description | Primary Use Case | Cloud Provider Example |
+|---|---|---|---|
+| Block Storage | Stores data in fixed-size blocks. | Operating systems, databases, and applications | AWS EBS |
+| File Storage | Stores data as files and folders. | Shared files and documents | AWS EFS |
+| Object Storage | Stores data as objects with information about the file. | Images, videos, backups, and other files | AWS S3 |
 
-## Why Object Storage is Suitable for the Client
+## Why Object Storage is Good for User-Uploaded Images
 
-Object Storage is a good choice for the client's photo-sharing application because it is designed to store large amounts of unstructured data such as images. It can organize many uploaded files using objects and buckets, making it suitable for applications that need to store millions of photos.
+Object Storage is a good choice for millions of user-uploaded images because it is made for storing large amounts of files. Each image can be stored as an object and accessed when needed.
+
+For this activity, MinIO was used as the object storage system. The bucket used for the test was called `client-photos`.
