@@ -1,64 +1,120 @@
 # MinIO Deployment
 
-## Docker Command
+## Environment
 
-The MinIO server was deployed using the following Docker command:
+I used KillerCoda with Ubuntu 24.04 to deploy MinIO. Docker was already available in the environment.
 
-```bash
-docker run -d -p 9000:9000 -p 9001:9001 --name minio-server \
--e "MINIO_ROOT_USER=cloudadmin" \
--e "MINIO_ROOT_PASSWORD=CloudNova2026!" \
-minio/minio server /data --console-address ":9001"
-```
+First, I checked the Docker version:
 
-## Web Console Port
+    docker --version
 
-The MinIO Web Console was accessed using:
+The result showed:
 
-```text
-Port 9001
-```
+    Docker version 29.1.3
 
-Port 9000 is used for the MinIO API, while port 9001 is used for the MinIO Web Console.
+I also checked if there were running containers:
 
-## Bucket Created
+    docker ps
 
-The storage bucket created for the client was:
+## First Problem
 
-```text
-client-photos
-```
+I first tried to pull the MinIO image using:
 
-A sample file was uploaded to the bucket to verify that the object storage system was working.
+    docker pull minio/minio
+
+However, it did not work. KillerCoda returned a pull access denied error:
+
+    pull access denied for minio/minio
+
+Because of this problem, I used the MinIO image from Quay instead.
+
+## Successful MinIO Image
+
+I ran:
+
+    docker pull quay.io/minio/minio
+
+The image was downloaded successfully.
+
+## MinIO Docker Command
+
+I then started the MinIO container using:
+
+    docker run -d -p 9000:9000 -p 9001:9001 --name minio-server \
+    -e "MINIO_ROOT_USER=cloudadmin" \
+    -e "MINIO_ROOT_PASSWORD=CloudNova2026!" \
+    quay.io/minio/minio server /data --console-address ":9001"
+
+## Checking the Container
+
+I used:
+
+    docker ps
+
+The result showed that the `minio-server` container was running.
+
+The ports used were:
+
+- Port 9000 - MinIO API
+- Port 9001 - MinIO Web Console
+
+I also checked the logs using:
+
+    docker logs minio-server
+
+The logs showed that the MinIO Object Storage Server and WebUI were running.
 
 ## Environment Variables
 
-The `-e` flags in the Docker command were used to set environment variables inside the MinIO container.
+### MINIO_ROOT_USER
 
-```text
-MINIO_ROOT_USER=cloudadmin
-```
+The value was:
 
-This sets the MinIO administrator username.
+    cloudadmin
 
-```text
-MINIO_ROOT_PASSWORD=CloudNova2026!
-```
+This is the username used to log in to the MinIO Web Console.
 
-This sets the MinIO administrator password.
+### MINIO_ROOT_PASSWORD
 
-Using environment variables makes it possible to configure the MinIO server when the Docker container is started.
+The value was:
 
-## Deployment Verification
+    CloudNova2026!
 
-The MinIO container was verified using:
+This is the password used to log in to the MinIO Web Console.
 
-```bash
-docker ps
-```
+## MinIO Web Console
 
-The running container showed that MinIO was successfully deployed and that ports 9000 and 9001 were available.
+I accessed the MinIO Web Console using port:
 
-## Result
+    9001
 
-The MinIO Web Console was successfully accessed through KillerCoda. The `client-photos` bucket was created and a sample file was uploaded successfully.
+I logged in using:
+
+    Username: cloudadmin
+    Password: CloudNova2026!
+
+## Bucket Created
+
+I created a bucket named:
+
+    client-photos
+
+I then uploaded:
+
+    sample.txt
+
+The file was successfully shown inside the `client-photos` bucket.
+
+## Problem With Port 9001
+
+At one point, I typed:
+
+    9001
+
+directly in the terminal.
+
+The terminal returned:
+
+    9001: command not found
+
+I learned that `9001` is a port number, not a Linux command. I used the KillerCoda port access option to open the MinIO Web Console instead.
