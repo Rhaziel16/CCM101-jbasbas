@@ -23,9 +23,11 @@ For this activity, I learned how object storage works and how to deploy MinIO us
 
 ## Skills Learned
 
-- Using basic Docker commands
-- Running a container in Linux
-- Checking a running container
-- Using a web-based object storage system
-- Creating a bucket and uploading a file
-- Writing Markdown documentation
+## Skills Learned
+
+- Using basic Linux commands
+- Using Docker commands
+- Deploying a container
+- Accessing a service through a port
+- Creating a storage bucket
+- Uploading files
