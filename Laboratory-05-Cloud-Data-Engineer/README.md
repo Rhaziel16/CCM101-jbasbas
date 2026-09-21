@@ -29,7 +29,3 @@ For this activity, I learned how object storage works and how to deploy MinIO us
 - Using a web-based object storage system
 - Creating a bucket and uploading a file
 - Writing Markdown documentation
-
-## Result
-
-The MinIO server was successfully deployed and accessed through the web console. I created the `client-photos` bucket and uploaded `sample.txt` successfully.
