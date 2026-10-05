@@ -1,6 +1,5 @@
-### `system-baseline-report.md`
+### system-baseline-report.md
 
-```markdown
 # System Baseline Report
 
 ## Host Resource Baseline
