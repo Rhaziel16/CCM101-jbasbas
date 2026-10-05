@@ -15,10 +15,18 @@ This mission is about deploying a private cloud storage system using Nextcloud a
 
 ## Commands Executed
 
-```bash
 mkdir nextcloud-deployment
 cd nextcloud-deployment
 nano docker-compose.yml
 docker-compose up -d
 docker-compose ps
 docker-compose down
+
+## Skills Learned
+
+Multi-tier application architecture
+Docker Compose
+YAML configuration
+Linux command-line text editing
+Infrastructure as Code
+Markdown documentation
