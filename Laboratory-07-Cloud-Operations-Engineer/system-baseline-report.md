@@ -1,29 +1,22 @@
+### `system-baseline-report.md`
 
+```markdown
 # System Baseline Report
 
-## Host System Baseline
+## Host Resource Baseline
 
 ### Total RAM
 
-The total RAM available on the server is **1.9Gi**.
+The total RAM available on the Linux server was **1.9Gi**.
 
-### Total Storage Capacity
+### Total Root Storage
 
-The total storage capacity of the root (/) file system is **19G**.
+The total storage capacity of the root (/) file system was **19G**.
 
-### CPU and Running Processes
+### CPU Check
 
-The `top` command was used to view the active processes and CPU load of the server.
+The `top` command showed that the CPU was **99.7% idle** during the system check.
 
-The server showed a CPU idle percentage of **99.7%** during the check.
+### Why Disk Space Is Critical
 
-### Why Disk Space Is Important
-
-Checking disk space is important because the server needs enough available storage to continue working properly during a large traffic surge.
-
-## Evidence
-
-The following screenshots were taken as evidence:
-
-- `screenshots/memory-check.png`
-- `screenshots/disk-check.png`
+Disk space is critical because the server needs enough available storage for logs, files, and other data when traffic increases.
