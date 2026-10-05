@@ -8,11 +8,11 @@
 
 ## Why Application Logs Are Important
 
-Application logs are useful because they show what happened when a request or application has a problem. They help the administrator find the error and understand which request caused it.
+Application logs are important because they show what happened when an application has a problem. They help the administrator find the error and know which request caused it.
 
 ## Container Metrics
 
-The client-website container was monitored using Docker's real-time statistics.
+The `client-website` container was monitored using the `docker stats` command.
 
-* CPU: **[PUT YOUR ACTUAL CPU % HERE]**
-* Memory: **[PUT YOUR ACTUAL MEMORY USAGE HERE]**
+* CPU: **0.00%**
+* Memory Usage: **2.734MiB / 1.859GiB**
