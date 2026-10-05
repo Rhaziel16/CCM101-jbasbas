@@ -2,16 +2,16 @@
 
 ## What is Two-Tier Architecture?
 
-A two-tier architecture separates an application into two parts: the web/application tier and the database tier. Each part has its own role and works together to run the application.
+A two-tier architecture separates an application into two main parts: the web/application tier and the database tier. Each part has its own job and works together to provide the application.
 
-## The Web/Application Tier
+## Web/Application Tier
 
-The web/application tier handles the user interface and HTTP requests. In this activity, Nextcloud is used as the application tier.
+The web/application tier handles the user interface and receives HTTP requests from users. In this activity, Nextcloud serves as the application tier.
 
-## The Database Tier
+## Database Tier
 
-The database tier stores the application's data, such as user accounts and file information. In this activity, MariaDB is used as the database.
+The database tier stores important information such as user accounts and application data. In this activity, MariaDB is used as the database.
 
 ## Why Separate Them?
 
-Keeping the web application and database in separate containers makes them easier to manage. Each container can do its own job without putting both parts in one container.
+Separating the web application and database makes the system easier to manage and maintain. If they are in separate containers, each part can be updated or managed without putting everything in one container.
