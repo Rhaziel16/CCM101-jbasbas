@@ -25,10 +25,9 @@ docker-compose down
 
 ## Skills Learned
 
-```bash
-Multi-tier application architecture
-Docker Compose
-YAML configuration
-Linux command-line text editing
-Infrastructure as Code
-Markdown documentation
+-Multi-tier application architecture
+-Docker Compose
+-YAML configuration
+-Linux command-line text editing
+-Infrastructure as Code
+-Markdown documentation
