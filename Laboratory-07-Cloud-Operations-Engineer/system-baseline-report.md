@@ -9,7 +9,7 @@ The total RAM available on the server is **1.9Gi**.
 
 ### Total Storage Capacity
 
-The total storage capacity of the root (/) file system is **19G**.
+The total storage capacity of the root (/) file system is **1.9Gi**.
 
 ### CPU and Running Processes
 
