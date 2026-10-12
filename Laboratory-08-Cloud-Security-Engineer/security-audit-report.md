@@ -11,7 +11,3 @@ An attack surface refers to the possible entry points that attackers can use to 
 ## 3. Default Deny Policy
 
 A Default Deny policy blocks incoming traffic unless a firewall rule allows it. This is safer because only approved connections can reach the server instead of allowing all connections.
-
-## 4. Security Audit
-
-The web application was deployed using Docker and tested using curl. The server firewall was then configured to block incoming traffic by default while allowing SSH and TCP port 8080. The firewall status and rules were checked during the activity.
