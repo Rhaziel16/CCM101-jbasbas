@@ -15,7 +15,3 @@ A Default Deny policy blocks incoming traffic unless a firewall rule allows it. 
 ## 4. Security Audit
 
 The web application was deployed using Docker and tested using curl. The server firewall was then configured to block incoming traffic by default while allowing SSH and TCP port 8080. The firewall status and rules were checked during the activity.
-
-## 5. Evidence
-
-Screenshots of the terminal results are saved in the screenshots folder.
