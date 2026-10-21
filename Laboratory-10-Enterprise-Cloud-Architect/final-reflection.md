@@ -1,1 +1,26 @@
 
+# Mission 10 Reflection: The Enterprise Cloud Architect
+
+In this mission, I learned how to set up and manage a website using Docker on Ubuntu Server. At first, I needed to understand how the different parts of the system work together. I used Ghost for the website and MySQL for the database. With Docker Compose, I was able to manage the containers using commands instead of setting up each service separately. This activity helped me understand how containers can make running an application easier.
+
+I also learned how to check the status of the containers and make sure that the services were running properly. Using commands such as `docker compose up -d` and `docker compose ps` helped me start the application and check its status. I learned that it is important to check the containers because a website may not work properly if one of its services has a problem. Ghost also needs a working connection to the MySQL database to store and access its data.
+
+Another thing I learned was the use of Docker volumes. Volumes help keep the database and website content even when the containers are stopped or restarted. This is important because data should not disappear just because a container is restarted. I now understand why persistent storage is needed when running an application that uses a database.
+
+In this activity, I also learned how to configure the firewall using UFW. The firewall helps control which connections are allowed to reach the server. I configured the required ports for SSH and the website while keeping unnecessary incoming connections blocked. I also learned why the MySQL port should not be directly exposed to the network when it is only needed by the application. These settings help reduce unnecessary access to the server.
+
+I gained more experience using Linux commands to check the system's condition. Commands such as `free -h` and `df -h /` helped me check the available memory and disk space. I also used `sudo ss -tulpn` to check the listening network ports. These commands are useful because they help me understand what is happening inside the server instead of only checking whether the website opens in a browser.
+
+One of the most important parts of this mission was creating a database backup script. I learned that backups are important because data can be lost due to mistakes, system problems, or other unexpected situations. The script creates a backup of the MySQL database and stores it in the backup directory. It also removes old backup files after the set period and keeps a log of its activity. This helped me understand why backups should be organized and checked regularly.
+
+I also learned how to use cron to schedule the backup script. Instead of running the script manually every day, cron can run it automatically at the scheduled time. In this activity, the backup was scheduled for 2:00 AM daily. This showed me how automation can save time and help make sure that important tasks are not easily forgotten.
+
+Another lesson I learned was the importance of testing a backup and knowing how to restore data. Creating a backup is not enough if I do not know whether it can be used when needed. The restore process helped me understand how a database backup can be returned to MySQL. I also learned that I should check the website and database after restoring data to make sure that the application can work again.
+
+I also learned the importance of checking the system after a reboot. Restarting the server can help confirm whether the containers, firewall settings, and scheduled tasks are still working as expected. This is useful because a system should not depend only on what works before it is restarted. It should also be able to start again and continue running properly.
+
+This mission also helped me understand that system security and data protection are connected. A working website is not enough if the server is not protected or if there is no backup in case data is lost. The firewall helps control access, Docker volumes help preserve data, and the backup script provides another way to recover database information. Each part has its own purpose, but they all help keep the system more reliable.
+
+I also realized that there are still improvements that can be made to the setup. The database backups are stored on the same virtual machine, so a serious problem with that machine could also affect the backups. The backup script also covers the database, not the entire Ghost content volume. The website uses HTTP, so HTTPS would be another important improvement if the website were to be used in a real environment. These limitations helped me understand that a working setup can still have areas that need improvement.
+
+Overall, Mission 10 gave me more experience with Docker, Docker Compose, Ubuntu Server, MySQL, firewall configuration, and automation. I learned how to run a website, manage its containers, protect access to the server, and create scheduled database backups. The activity also taught me to check and test the system instead of assuming that everything is working. I can use these skills in future cloud computing activities and other projects that require a website, a database, and basic server management.
